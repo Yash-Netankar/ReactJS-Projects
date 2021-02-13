@@ -1,0 +1,306 @@
+.resume_form_container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.resume_form_container .resume_form_title {
+  font-size: 1.8rem;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+.resume_form_container .resume_form_title span {
+  color: #227093;
+  font-size: 1.9rem;
+  text-shadow: 1px 0px 2px black;
+}
+.resume_form_container .resume_form {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 10px;
+  background-color: #ced6e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.resume_form_container .resume_form .ip_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: red; */
+}
+.resume_form_container .resume_form .post_div {
+  margin: 15px 0;
+  width: 100%;
+}
+.resume_form_container .resume_form .ip_div label {
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.resume_form_container .resume_form .ip_div label input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  border-radius: 3px;
+}
+.resume_form_container .resume_form .ip_div label input:focus {
+  box-shadow: 1px 1px 5px black;
+}
+.resume_form_container .resume_form .ip_div label textarea {
+  width: 90vw !important;
+  display: block;
+  font-family: "Poppins";
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  resize: none;
+  border-radius: 5px;
+}
+.resume_form_container .resume_form .ip_div label .email {
+  width: 90vw !important;
+  display: block;
+}
+
+/* styling projects div */
+.resume_form .project_div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.resume_form .project_div .p_heading {
+  font-size: 1.8rem;
+}
+.resume_form .project_div .p_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 10px;
+}
+.resume_form .project_div .p_container .project {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.resume_form .project_div .p_container .project label {
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.resume_form .project_div .p_container .project label input {
+  padding: 3px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 80%;
+  border: none;
+  font-family: "Poppins";
+}
+
+/* Experience div */
+.resume_form_container .resume_form .ex_div {
+  width: 100%;
+}
+.resume_form_container .resume_form .ex_div .ex_heading {
+  font-size: 1.8rem;
+}
+.resume_form_container .resume_form .ex_div .ex_container {
+  display: flex;
+  justify-content: space-around;
+}
+.resume_form_container .resume_form .ex_div .ex_container label {
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.resume_form_container .resume_form .ex_div .ex_container label input {
+  padding: 3px;
+  width: 70%;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+}
+/* Education div */
+.resume_form_container .resume_form .ed_div {
+  width: 100%;
+}
+.resume_form_container .resume_form .ed_div .ed_heading {
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+.resume_form_container .resume_form .ed_div .ed_container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.resume_form_container .resume_form .ed_div .ed_container label {
+  margin-top: 15px;
+  width: 90vw !important;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.resume_form_container .resume_form .ed_div .ed_container label input {
+  padding: 3px;
+  width: 80vw !important;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+}
+.resume_form_container .resume_form .ed_div .ed_container label textarea {
+  width: 95%;
+  padding: 3px;
+  resize: none;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+}
+
+/* SKILLS AND TOOLS */
+.resume_form_container .resume_form .sk_heading {
+  font-size: 1.8rem;
+  margin: 15px 0;
+  text-align: left;
+  width: 100%;
+}
+.resume_form_container .resume_form .skills_div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.resume_form_container .resume_form .skills_div .sk_container,
+.tool_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.resume_form_container .resume_form .skills_div .sk_container h1,
+.tool_container h1 {
+  margin: 15px 0;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.resume_form_container .resume_form .skills_div .sk_container .skills,
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.resume_form_container .resume_form .skills_div .sk_container .skills label,
+.tools label {
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.resume_form_container
+  .resume_form
+  .skills_div
+  .sk_container
+  .skills
+  label
+  input,
+.tools label input {
+  padding: 3px;
+  width: 100% !important;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+}
+.resume_form_container
+  .resume_form
+  .skills_div
+  .sk_container
+  .skills
+  label
+  input:focus,
+.tools label input:focus {
+  box-shadow: 1px 1px 5px black;
+}
+.sub_btn {
+  width: 100%;
+  padding: 5px;
+  background: linear-gradient(#ffb75e, #ed8f03);
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.sub_btn:hover {
+  background: linear-gradient(#f46b45, #eea849);
+}
+.lang_container_form {
+  width: 100%;
+  margin: 0rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.lang_container_form section {
+  padding: 1rem;
+}
+.lang_container_form section .level {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lang_container_form section label input {
+  outline: none;
+  background: #fff;
+  padding: 4px;
+  border: none;
+  display: block;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+/* skills progress */
+.skill_level_cont {
+  width: 100%;
+  margin-top: 2rem;
+}
+.skill_level_cont h1 {
+  font-size: 1.5rem;
+}
+.skill_level_cont h2 {
+  font-size: 1.2rem;
+}
+.skill_level_cont .levels {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill_level_cont .levels input {
+  outline: none;
+  border: none;
+  padding: 4px;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  width: 25%;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 500;
+}

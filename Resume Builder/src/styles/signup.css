@@ -1,0 +1,84 @@
+.signUp_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ecf0f1;
+}
+
+.signUp_container h1 {
+  color: #2f3640;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.signUp_container form {
+  width: 45%;
+  max-width: 45%;
+  padding: 10px 30px;
+  border: 1px solid #2c3e50;
+  background: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signUp_container form label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.signUp_container form input,
+button {
+  padding: 0px;
+  margin-bottom: 15px;
+  width: 90%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #2c3e50;
+  color: #2c3e50;
+  background: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.signUp_container form input::placeholder {
+  font-size: 0.9rem;
+}
+.signUp_container form small {
+  font-size: 0.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(177, 6, 6);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.signUp_container form button {
+  padding: 5px 10px;
+  margin-top: 3rem;
+  background: royalblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.signUp_container form button:hover {
+  background: #2f3640;
+  color: royalblue;
+}
+.signUp_container h4 {
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 580px) {
+  .signUp_container form {
+    width: 75%;
+    max-width: 75%;
+  }
+}

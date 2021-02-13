@@ -1,0 +1,71 @@
+.all_templates_div {
+  margin-top: 20px;
+  position: relative;
+  height: 0vh;
+  background: #ecf0f1;
+  text-align: center;
+}
+.all_templates_div .div_name {
+  font-size: 2rem;
+  word-spacing: 4px;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px #2c3e50;
+}
+
+.all_templates_div .templates_div {
+  margin-top: 10px;
+  padding: 5px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.all_templates_div .templates_div .template_div {
+  margin-top: 20px;
+  width: 27%;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+.all_templates_div .templates_div .template_div:hover {
+  transform: scale(1.1);
+}
+.all_templates_div .templates_div .template_div img {
+  width: 100%;
+  display: inline-block;
+}
+.all_templates_div .templates_div .template_div button {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(#ffb75e, #ed8f03);
+}
+.all_templates_div .templates_div .template_div button:hover {
+  background: linear-gradient(#f46b45, #eea849);
+}
+
+/* DESIGN BELOW 790PX */
+@media screen and (max-width: 790px) {
+  .all_templates_div .templates_div .template_div {
+    width: 45%;
+  }
+}
+
+/* DESIGN BELOW 550PX */
+@media screen and (max-width: 590px) {
+  .all_templates_div .templates_div .template_div {
+    width: 65%;
+  }
+}
+/* DESIGN BELOW 460PX */
+@media screen and (max-width: 460px) {
+  .all_templates_div .templates_div .template_div {
+    width: 80%;
+  }
+}

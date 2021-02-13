@@ -1,0 +1,119 @@
+.template4 {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: space-around;
+}
+i {
+  color: #3498db;
+  margin-right: 0.2rem;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 2px 0px #e67d228c;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.template4 .sec1 {
+  width: 60%;
+  /* overflow: hidden; */
+}
+.template4 .sec1 .name_social h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.template4 .sec1 .name_social p,
+.template4 .sec1 .name_social a {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.template4 .sec1 .name_social a {
+  text-decoration: none;
+  color: #3d3d3d;
+  margin-right: 1.5rem;
+}
+/* headings */
+.template4 .sec1 .about_container .about_heading,
+.template4 .sec1 .exp_container .exp_heading,
+.template4 .sec1 .ed_container .ed_heading,
+.template4 .sec1 .pro_heading,
+.template4 .sec2 .sk_heading,
+.template4 .sec2.tool_heading,
+.template4 .sec2 .lang_heading {
+  background: none;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: black;
+  padding-left: 0;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+}
+.template4 .sec1 .about_container .about {
+  padding-left: 0.2rem;
+  word-spacing: 3px;
+  line-height: 1.4rem;
+  font-size: 0.95rem;
+}
+.template4 .sec1 .exp_container p,
+.template4 .sec1 .ed_container p {
+  padding: 0.2rem;
+  word-spacing: 3px;
+  line-height: 1.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.template4 .project_container {
+  width: 80vw;
+}
+.template4 .project_container .projects {
+  display: flex;
+  justify-content: space-between;
+}
+.template4 .project_container .projects div {
+  width: 50%;
+}
+.template4 .project_container .projects div a {
+  color: black;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.template4 .project_container .projects div p {
+  font-size: 1rem;
+  word-spacing: 1px;
+  font-weight: 600;
+  color: #3d3d3d;
+}
+
+.template4 .sec2 .sk_container .skills .skill_item,
+.template4 .sec2 .tool_container,
+.template4 .sec2 .lang_container .lang .lang_item {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/*progress[value] {
+   /* Reset the default appearance */ /*
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-color: #e67e22;
+  border-radius: 4px;
+}
+*/

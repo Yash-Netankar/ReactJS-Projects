@@ -1,0 +1,100 @@
+.template3 {
+  /* background: red; */
+  width: 90%;
+  margin: 0 auto;
+}
+.template3 .name {
+  text-align: center;
+  font-size: 1.7rem;
+  word-spacing: 2px;
+  padding-top: 1rem;
+}
+.template3 .post {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  word-spacing: 1px;
+}
+.template3 .social {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.template3 .social a {
+  color: royalblue;
+  letter-spacing: 1px;
+}
+.template3 .about_container,
+.template3 .exp_container,
+.template3 .edu_container,
+.template3 .projects,
+.template3 .sk_container {
+  /* background-color: green; */
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+.template3 .about_heading,
+.template3 .exp_heading,
+.template3 .edu_heading,
+.template3 .pro_heading,
+.template3 .sk_heading {
+  border: 1px solid lightblue;
+  background: none;
+  padding: 2px 0rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #333;
+  word-spacing: 4px;
+  font-family: "Poppins";
+}
+/* about */
+.template3 .about {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+/* all names */
+.template3 .exp_container .exp .exp_name,
+.template3 .edu_container .edu .edu_name,
+.template3 .projects .pro .p_name,
+.template3 .sk_container .skills .sk_name,
+.template3 .sk_container .tools .tool_name {
+  margin-right: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  min-width: 25%;
+  margin-top: 0.5rem;
+}
+/* experience and education and projects*/
+.template3 .exp_container .exp,
+.template3 .edu_container .edu,
+.template3 .projects .pro {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  padding: 1rem;
+  word-spacing: 3px;
+}
+/* skills & Tools */
+.template3 .sk_container {
+  margin-bottom: 2rem;
+}
+.template3 .sk_container .skills,
+.template3 .sk_container .tools {
+  display: flex;
+  flex-direction: row;
+}
+.template3 .sk_container .skills .sk_name::before,
+.template3 .sk_container .tools .tool_name::before {
+  content: "⭐";
+  margin-right: 0.1rem;
+}

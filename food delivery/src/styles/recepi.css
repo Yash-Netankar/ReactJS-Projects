@@ -1,0 +1,130 @@
+.recepi-container {
+  background-color: #ecf0f1;
+  width: 100%;
+}
+.recepi-container .recepi-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.recepi-card-container .card {
+  width: 30%;
+  margin-top: 10px;
+  border: 1px solid #2c3e50;
+  padding: 15px 20px;
+}
+.recepi-card-container .card .img-div {
+  margin: 0 auto;
+  width: 70%;
+  height: 150px;
+}
+.recepi-card-container .card .img-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
+}
+.recepi-card-container .card h5 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-family: Ubuntu;
+}
+
+.recepi-card-container .card .order_div {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e74d3cce;
+  align-items: center;
+}
+.recepi-card-container .card .order_div h5,
+.order {
+  font-size: 0.8rem;
+}
+.recepi-card-container .card .order_div .order {
+  color: white;
+  outline: none;
+  background: transparent;
+  border: none;
+  padding: 4px 9px;
+  text-decoration: none;
+  box-shadow: 0 0 3px 1px royalblue;
+  transition: 0.4s;
+}
+.recepi-card-container .card .order_div .order:hover {
+  box-shadow: 0 0 3px 1px white;
+}
+.recepi-card-container .card .ingredients {
+  margin-top: 5px;
+  list-style-type: none;
+  height: 100px;
+  overflow: auto;
+}
+.recepi-card-container .card .ingredients::-webkit-scrollbar {
+  width: 5px;
+}
+.recepi-card-container .card .ingredients::-webkit-scrollbar-track {
+  background-color: #e74d3cce;
+  border-radius: 5px;
+}
+.recepi-card-container .card .ingredients::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+.recepi-card-container .card .ingredients li {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 760px) {
+  .recepi-card-container .card {
+    width: 41%;
+  }
+  .cross-btn {
+    height: 30px !important;
+    padding: 5px 10px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recepi-card-container .card {
+    width: 60%;
+  }
+  .product-cont {
+    margin-top: 120px !important;
+  }
+  .product-cont div .product-status {
+    width: 100% !important;
+  }
+  .product-cont div .product-status button {
+    padding: 2px 4px !important;
+  }
+  .model2-heading {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .recepi-card-container .card {
+    width: 75%;
+  }
+  .model1-heading {
+    font-size: 1.2rem;
+  }
+  .model2-heading {
+    font-size: 1.1rem;
+  }
+  iframe {
+    width: 100% !important;
+  }
+  .product-cont {
+    margin-top: 150px !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .recepi-card-container .card {
+    width: 90%;
+  }
+  .product-cont {
+    margin-top: 155px !important;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "name": "yash",
+      "address": "keshavnagar",
+      "id": 1
+    },
+    {
+      "name": "barack lassun",
+      "address": "kaalifornia",
+      "id": 2
+    }
+    
+  ]
+}

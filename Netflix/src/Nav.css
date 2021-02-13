@@ -1,0 +1,34 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.nav_black {
+  background: #777;
+}
+nav .logo {
+  color: rgb(165, 7, 7);
+  letter-spacing: 2px;
+}
+nav .bars {
+  width: 35px;
+  height: 35px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  cursor: pointer;
+}
+nav .bars .line {
+  background-color: #fff;
+  margin: 2px 0;
+  width: 70%;
+  height: 2px;
+}

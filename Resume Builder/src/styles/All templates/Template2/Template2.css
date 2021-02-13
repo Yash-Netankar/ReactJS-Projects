@@ -1,0 +1,121 @@
+.template2 {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #ecf0f1;
+  overflow: hidden;
+}
+.template2 .name {
+  font-size: 1.5rem;
+  text-shadow: 0px 1px 1px #2c3e50;
+  word-spacing: 3px;
+  padding: 0.6rem 0.6rem;
+}
+.info_container,
+.about_container,
+.exp_container,
+.edu_container,
+.pro_container,
+.ski_container {
+  width: 100%;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  /* background-color: red; */
+}
+.info_container .info_heading,
+.about_container .about_heading,
+.exp_container .exp_heading,
+.edu_container .edu_heading,
+.pro_container .pro_heading,
+.ski_container .ski_heading {
+  background: #95a5a6;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #2c3e50;
+  padding: 0.1rem 0;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.info_container .info,
+.about_container .about,
+.exp_container .experience,
+.edu_container .education,
+.pro_container .projects,
+.ski_container .skillDiv {
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  word-spacing: 4px;
+  font-weight: 600;
+  line-height: 1.7rem;
+  color: #1e272e;
+}
+/* INFO */
+.info_container .info p span {
+  color: black;
+  font-weight: 900;
+}
+.info_container .info .social {
+  width: 30%;
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.info_container .info .social a {
+  text-decoration: none;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: #95a5a6;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+/* ABOUT*/
+.about_container .about {
+  padding-right: 1rem;
+}
+/* EXPERIENCE && EDUCATION*/
+.exp_container .experience,
+.edu_container .education {
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.exp_container .experience h3,
+.edu_container .education h3 {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
+/* PROJECTS */
+.pro_container .projects {
+  display: flex;
+  justify-content: space-between;
+}
+.pro_container .projects .sec1 {
+  width: 100%;
+  margin-right: 1rem;
+}
+/* SKILLS & TOOLS */
+.ski_container .skillDiv ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.ski_container .skillDiv ul li {
+  margin-right: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .info_container .info .social {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .info_container .info .social {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .info_container .info .social {
+    width: 80%;
+  }
+}
