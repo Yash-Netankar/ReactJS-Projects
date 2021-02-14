@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+.main-app {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://cdn.pixabay.com/photo/2018/03/07/17/15/balloon-3206530__340.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  animation: images 20s linear infinite;
+}
+@keyframes images {
+  0% {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://cdn.pixabay.com/photo/2018/03/07/17/15/balloon-3206530__340.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  20% {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://cdn.pixabay.com/photo/2015/09/18/11/34/fireworks-945386__340.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662__340.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://cdn.pixabay.com/photo/2019/12/03/13/25/yipeng-4670043__340.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  80% {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://cdn.pixabay.com/photo/2014/11/21/03/29/fair-540126__340.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495__340.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.main-app .app {
+  width: 30%;
+  height: 70%;
+  padding: 5px 10px;
+  background: #ecf0f1;
+  color: #34495e;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.295);
+}
+.main-app .app h2 {
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+}
+.main-app .app h5 {
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+.main-app .app .events-div {
+  width: 100%;
+  height: 75%;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+.main-app .app .events-div .event {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main-app .app .events-div .event .del-btn {
+  background: #bdc3c7;
+  color: #2c3e50;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 9px;
+  transition: 0.5s;
+}
+.main-app .app .events-div .event .del-btn:hover {
+  background: transparent;
+  color: #b71540;
+}
+.main-app .app .btn-div {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-app .app .btn-div .addBtn {
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #e74c3c;
+  color: #2c3e50;
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main-app .app .addBtn:hover {
+  background: #34495e;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+  .main-app {
+    height: 120vh;
+  }
+  .main-app .app {
+    width: 60%;
+    height: 50%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-app .app {
+    width: 80%;
+    height: 50%;
+  }
+}

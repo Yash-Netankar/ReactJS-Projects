@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "eventName": "Republic Day",
+      "date": "26/1",
+      "id": 1
+    },
+    {
+      "eventName": "Independance Day",
+      "date": "9/12",
+      "id": 2
+    },
+    {
+      "eventName": "Demo Day",
+      "date": "9/12",
+      "id": 3
+    }
+  ]
+}

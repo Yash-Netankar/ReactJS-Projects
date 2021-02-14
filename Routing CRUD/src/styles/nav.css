@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: royalblue;
+  padding: 10px 5px;
+}
+nav.scroll {
+  background-color: #e74d3cce;
+  position: fixed;
+  top: 0;
+}
+.logo .logo-div h1 {
+  font-family: Ubuntu;
+  color: white !important;
+  font-size: 1.2rem;
+}
+
+nav .nav-items {
+  display: flex;
+  align-items: center;
+}
+nav .nav-items .nav-link {
+  font-size: 1rem;
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+nav .nav-items .active {
+  color: #333;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .nav-items {
+    margin: 10px 0;
+    flex-direction: column;
+  }
+  nav .nav-items .nav-link {
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+}
