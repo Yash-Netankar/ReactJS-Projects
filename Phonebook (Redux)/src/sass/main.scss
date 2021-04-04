@@ -1,0 +1,17 @@
+@import "./partials/Var";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: "Poppins";
+}
+
+@import "./partials/Nav";
+@import "./partials/home";
+@import "./partials/phoneContainer";
+@import "./partials/notification_bar";
+@import "./partials/allContacts";
+@import "./partials//CreateContact"

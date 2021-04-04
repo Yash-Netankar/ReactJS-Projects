@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+nav {
+  width: 100%;
+  padding: .5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2c3e50;
+  -webkit-box-shadow: 0 0 10px 10px #3333335d;
+          box-shadow: 0 0 10px 10px #3333335d;
+}
+
+nav .homeLink {
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+nav .create_btn_link {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav .create_btn_link .create_btn {
+  background: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-weight: 600;
+}
+
+nav .create_btn_link .create_btn:hover {
+  background: gray;
+}
+
+.home_container {
+  width: 30%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border: 6px solid #353b48;
+  border-radius: 15px 15px 12px 12px;
+  position: relative;
+}
+
+.home_container .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home_container .tabs .tab_btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 600;
+}
+
+.home_container .tabs .tab_btn:focus {
+  color: #eb3b5a;
+}
+
+.home_container::after {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: -8px;
+  background: #333;
+  width: 1%;
+  height: 9vh;
+  border-radius: 30%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 780px) {
+  .home_container {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .home_container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .home_container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .home_container {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home_container {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .home_container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .home_container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .home_container {
+    width: 95%;
+  }
+}
+
+.phone_container .search_results {
+  width: 100%;
+  height: 27vh;
+  padding: .1rem .2rem;
+  font-size: .8rem;
+  font-weight: 600;
+  overflow-y: auto;
+  z-index: -1;
+}
+
+.phone_container .search_results::-webkit-scrollbar {
+  display: none;
+}
+
+.phone_container .search_results .search_num {
+  color: #777;
+  font-size: .6rem;
+}
+
+.phone_container .keypad {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #dcdde1;
+  border-radius: 0 0 5px 5px;
+}
+
+.phone_container .keypad .display_number {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  background: whitesmoke;
+}
+
+.phone_container .keypad .btns {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.phone_container .keypad .btns .num_btn {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: .2rem;
+}
+
+.phone_container .keypad .call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.phone_container .keypad .call .call_btn {
+  background: #05c46b;
+  color: #ecf0f1;
+}
+
+.phone_container .keypad .call .cut_btn {
+  background: #eb3b5a;
+  color: black;
+}
+
+.notification_bar {
+  width: 100%;
+  background-color: #333;
+  color: #ecf0f1;
+  border-radius: 4px 4px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification_bar .left {
+  margin-left: .1rem;
+  padding: .1rem .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification_bar .left .camera {
+  margin-right: .4rem;
+  color: #777;
+}
+
+.notification_bar .right .icon {
+  margin-right: .2rem;
+  font-size: 1rem;
+}
+
+.allContacts_div {
+  width: 100%;
+  height: 80%;
+  padding: .1rem .2rem;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.allContacts_div #contact_search {
+  width: 100%;
+  padding: .3rem .2rem;
+  outline: none;
+  font-family: "Poppins";
+  border: none;
+  background: whitesmoke;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.allContacts_div .allContact_contact {
+  padding: .3rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid #c0c0c04f;
+}
+
+.allContacts_div .allContact_contact .info_div_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.allContacts_div .allContact_contact .info_div_container .info_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.allContacts_div .allContact_contact .info_div_container .info_div .info {
+  margin-left: .3rem;
+}
+
+.allContacts_div .allContact_contact .info_div_container .info_div .info p {
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.allContacts_div .allContact_contact .info_div_container .info_div .info .info_phone {
+  font-size: .6rem;
+}
+
+.allContacts_div .allContact_contact .info_div_container .i {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.allContacts_div .allContact_contact .actions {
+  margin-top: .5rem;
+}
+
+.allContacts_div .allContact_contact .actions .actionLink {
+  text-decoration: none;
+}
+
+.allContacts_div .allContact_contact .actions .actionIcon {
+  font-size: 1.1rem;
+}
+
+.allContacts_div::-webkit-scrollbar {
+  display: none;
+}
+
+.createContact_div {
+  width: 70%;
+  border: 2px solid #333;
+  margin: 2rem auto;
+}
+
+.createContact_div #create_form {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.createContact_div #create_form input {
+  width: 90%;
+  outline: none;
+  border: 1px solid #777;
+  background: white;
+  padding: .2rem .3rem;
+  margin: .5rem;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.createContact_div #create_form .create_btn {
+  background: #05c46b;
+  color: white;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.createContact_div #create_form .create_btn:hover {
+  background: darkgreen;
+}
+/*# sourceMappingURL=main.css.map */

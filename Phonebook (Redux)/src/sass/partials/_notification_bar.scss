@@ -1,0 +1,27 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.notification_bar{
+    width: 100%;
+    background-color: #333;
+    color: $white;
+    border-radius:4px 4px 0 0;
+    @include flex(row, space-between, center);
+    .left{
+        margin-left: .1rem;
+        padding: .1rem .2rem;
+        @include flex(row, space-between, center);
+        .camera{
+            margin-right: .4rem;
+            color: #777;
+        }
+    }
+    .right .icon{
+        margin-right: .2rem;
+        font-size: 1rem;
+    }
+}
